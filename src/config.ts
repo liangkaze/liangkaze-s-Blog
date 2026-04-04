@@ -87,7 +87,7 @@ export const siteConfig: SiteConfig = {
 	},
 
 	anime: {
-		mode: "local", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
+		mode: "bilibili", // 番剧页面模式："bangumi" 使用Bangumi API，"local" 使用本地配置，"bilibili" 使用Bilibili API
 	},
 
 	// 文章列表布局配置
@@ -465,7 +465,7 @@ export const shareConfig: ShareConfig = {
 
 export const announcementConfig: AnnouncementConfig = {
 	title: "", // 公告标题，填空使用i18n字符串Key.announcement
-	content: "ブログへようこそ！これはサンプルの告知です", // 公告内容
+	content: "欢迎来到我的博客！请慢慢浏览～今后会持续更新有趣内容，记得常来看看哦✨", // 公告内容
 	closable: true, // 允许用户关闭公告
 	link: {
 		enable: true, // 启用链接
@@ -478,7 +478,7 @@ export const announcementConfig: AnnouncementConfig = {
 export const musicPlayerConfig: MusicPlayer = {
   enable: true, // 启用播放器
   showFloatingPlayer: true, // 显示悬浮窗
-  floatingEntryMode: "default", // 播放器样式
+  floatingEntryMode: "list", // 播放器样式
   mode: "meting", // 这里单独一行，值为 "meting"
   meting_api: "https://meting-api.liangkaze.cn/api?server=netease&type=playlist&id=331841455", // 你的本地API地址
   id: "331841455", // 歌单ID
