@@ -24,7 +24,7 @@ const textData = Array.isArray(text) ? JSON.stringify(text) : text;
 	data-delete-speed={deleteSpeed}
 	data-pause-time={pauseTime}></span>
 
-<script>
+<script is:inline>
 	class TypewriterEffect {
 		private element: HTMLElement;
 		private texts: string[];
