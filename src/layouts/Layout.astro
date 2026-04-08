@@ -329,19 +329,3 @@ if (siteConfig.font) {
 <script>
 	import "../scripts/theme-optimizer.js";
 </script>
-
-<!-- 离开页面时切换标题 -->
-<script is:inline>
-	(function() {
-		const originalTitle = document.title;
-		const awayTitle = "快回来吧~";
-		
-		document.addEventListener('visibilitychange', function() {
-			if (document.hidden) {
-				document.title = awayTitle;
-			} else {
-				document.title = originalTitle;
-			}
-		});
-	})();
-</script>
