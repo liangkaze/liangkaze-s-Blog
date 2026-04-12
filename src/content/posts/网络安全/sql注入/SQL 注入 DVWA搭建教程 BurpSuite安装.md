@@ -6,15 +6,15 @@ published: 2026-04-12
 
 description: "抓包工具 靶场部署  sql注入初步了解"
 
-tags: ["靶场", "工具", "网络安全"] 
+tags: ["靶场", "工具"] 
 
-category: "网络工程"
+category: "网络安全"
 
 draft: false 
 
 pinned: false 
 
-image: "./0.webp" 
+image: "./0.jpg" 
 
 author: "liangkaze" 
 
@@ -56,13 +56,13 @@ author: "liangkaze"
 
 安装好后打开phpstudy，把鼠标指针移到WAMP的红点上会出现切换点击切换会出现例如下图按照图片配置
 
-![](D:\desktop\bj\网络安全\sql注入\1.png)
+![](./1.png)
 
 
 
 确保端口没有被占用并且启动中间件和数据库
 
-![](D:\desktop\bj\网络安全\sql注入\2.png)
+![](./2.png)
 
 
 
@@ -70,7 +70,7 @@ author: "liangkaze"
 
 将DVWA压缩包解压到phpstudy_pro\WWW的文件夹下
 
-![](D:\desktop\bj\网络安全\sql注入\3.png)
+![](./3.png)
 
 打开DVWA目录下的config文件夹将数据库的端口和用户名密码改为自己的并修改文件名为`config.inc.php`
 
@@ -85,6 +85,6 @@ $_DVWA[ 'db_port']      = getenv('DB_PORT') ?: '3306';
 
 进入Powershell查询自己的IP，在浏览器上输入http://自己的IP/DVWA/setup.php，点击`creat database`
 
-![](D:\desktop\bj\网络安全\sql注入\4.png)
+![](./4.png)
 
 部署已经完成
